@@ -35,6 +35,10 @@
     //
     document.addEventListener("deviceready", onDeviceReady, false);
 
+    function resizeText(multiplier) {
+    var elem = document.getElementById("foo");
+    var currentSize = elem.style.fontSize || 1;
+    elem.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.2)) + "em";
    
     }
 
@@ -95,6 +99,12 @@
             <img class="img-responsive" src="img/02.jpg">
           </div>
           <div class="blog-post">
+
+            <div class="botonesletra">
+              <input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" />
+              <input name="reSize2" type="button" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" />
+            </div>
+            
             <h3 class="blog-post-title">Día tres</h3>
             <h5>Acto de Contrición</h5>
             <div class="bgris">
