@@ -7389,7 +7389,7 @@ input[type="checkbox"]:disabled:checked:after,
   padding-left: 15px;
   padding-right: 15px;
 }
-.bgris {
+#bgris {
   background: #eee;
   margin-left: -15px;
   margin-right: -15px;
