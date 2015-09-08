@@ -36,7 +36,7 @@
     document.addEventListener("deviceready", onDeviceReady, false);
 
     function resizeText(multiplier) {
-    var elem = document.getElementById("bgris");
+    var elem = document.getElementById("font");
     var currentSize = elem.style.fontSize || 1;
     elem.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.2)) + "em";
    
@@ -105,9 +105,13 @@
               <input name="reSize2" type="button" value="&nbsp;-&nbsp;&nbsp;" onclick="resizeText(-1)" />
             </div>
 
-            
+
             <h3 class="blog-post-title">Día octavo</h3>
             <h5>Acto de Contrición</h5>
+            
+            <div id="font">
+
+
             <div id="bgris">
 
              <p>Dulce Jesús mío y mi crucificado Señor, indigno de ponerme delante de tus ojos, me postro avergonzado a tus pies, confesando la multitud de mis culpas, con íntimo dolor de mi alma por haberte ofendido. Herido vengo, médico divino, a buscar mi remedio en tu benigna misericordia, y te propongo con todo mi corazón la enmienda. Dulce amor mío eres sobre todas las cosas, ten piedad de mí; acuérdate, Señor, que tu amor por mí, te puso en esa Cruz y no te acuerdes que yo, como ingrato y desconocido, me olvidé de tu paternal amor. Si a Ti, que eres mi Padre, no vuelvo los ojos, ¿quién otro se compadecerá de mí? ¡Señor Jesús cómo te ofendí! ¡Quién de dolor muriera a tus pies, pues amándome tanto me atreví a ofender a un Dios tan bueno, tan santo y tan amable! Pequé, Padre mío, contra el cielo y contra Ti, ten misericordia de mí. AMÉN.</p>
@@ -227,8 +231,7 @@ por mi amor. ¡Salvador mío, dame la esperanza en tu amor! </p>
   nuestra petición<br>
   por tu amor logremos.<br><br>
 </p>
-
-
+</div>
 
                <nav>
                 <ul class="pager">

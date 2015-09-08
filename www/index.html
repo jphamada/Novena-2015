@@ -35,10 +35,6 @@
     //
     document.addEventListener("deviceready", onDeviceReady, false);
 
-    function resizeText(multiplier) {
-    var elem = document.getElementById("bgris");
-    var currentSize = elem.style.fontSize || 1;
-    elem.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.2)) + "em";
    
     }
 
@@ -97,11 +93,8 @@
           <img class="img-responsive img-circle" src="img/09.jpg" />
           <div class="blog-post">
 
-            <div class="botonesletra">
-              <input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" />
-              <input name="reSize2" type="button" value="&nbsp;-&nbsp;&nbsp;" onclick="resizeText(-1)" />
-            </div>
-            
+           
+
             <h3 class="blog-post-title">Tiempo de fe</h3>
             <h5>Novena del Señor y la Virgen del Milagro</h5>
             <div id="bgris">
