@@ -36,7 +36,7 @@
     document.addEventListener("deviceready", onDeviceReady, false);
 
     function resizeText(multiplier) {
-    var elem = document.getElementById("foo");
+    var elem = document.getElementById("bgris");
     var currentSize = elem.style.fontSize || 1;
     elem.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.2)) + "em";
    
@@ -99,7 +99,7 @@
 
             <div class="botonesletra">
               <input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" />
-              <input name="reSize2" type="button" value="&nbsp;-&nbsp;" onclick="resizeText(-1)" />
+              <input name="reSize2" type="button" value="&nbsp;-&nbsp;&nbsp;" onclick="resizeText(-1)" />
             </div>
             
             <h3 class="blog-post-title">Tiempo de fe</h3>
