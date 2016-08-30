@@ -9,7 +9,7 @@
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
 
-  <title>Novena del Señor y la Virgen del Milagro</title>
+  <title>Pacto de Fidelidad</title>
 
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +35,10 @@
     //
     document.addEventListener("deviceready", onDeviceReady, false);
 
-
+    function resizeText(multiplier) {
+    var elem = document.getElementById("font");
+    var currentSize = elem.style.fontSize || 1;
+    elem.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.2)) + "em";
    
     }
 
@@ -52,7 +55,7 @@
       <div class="container-fluid">
        <!-- Menú -->
 
-       <nav class="navbar navbar-inverse navbar-fixed-top">
+       <nav class="navbar navbar-inverse navbar-fixed-top nav-bar-transparent">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -80,8 +83,6 @@
               <li><a href="nueve.html">Noveno día</a></li>
               <li><a href="pacto.html">Pacto de Fidelidad</a></li>
               <li><a href="oracion-virgen.html">Oración a la Virgen del Milagro</a></li>
-
-
             </ul>
           </div>
         </div>
@@ -98,25 +99,39 @@
         <div class="col-md-12 blog-main">
           <div class="overlay">
             <div class="sombra"></div>
-            <img class="img-responsive" src="img/11.jpg">
+            <img class="img-responsive" src="img/13.jpg">
           </div>
           <div class="blog-post">
-            <h3 class="blog-post-title">Información últil</h3>
-            <h5>Mapa de la procesión</h5>
+            
+            <div class="botonesletra">
+              <input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" />
+              <input name="reSize2" type="button" value="&nbsp;-&nbsp;&nbsp;" onclick="resizeText(-1)" />
+            </div>
+
+            <h3 class="blog-post-title">Pacto de Fidelidad</h3>
+            <h5>Renovación del Pacto de Fidelidad al Señor del Milagro</h5>
+            
+
+            <div id="font">
+
             <div id="bgris">
 
-              <p></p>
-              <p>
-                <img src="img/map.jpg"></p>
+             <p>Divino Jesús Crucificado y Señor Nuestro del Milagro, el pueblo de Salta hoy postrado en vuestra presencia, viene a renovar los votos de sus mayores, cuando acudiera a Vos, encontrando remedio en su aflicción. Sí, ante esa Cruz que nos enviasteis a través de los mares para ser nuestro escudo y defensa, juramos, lo que juraron nuestros padres, teneros siempre por Padre, Abogado y Patrono, y reconocer vuestra real soberanía sobre todos los pueblos, y especialmente sobre el nuestro.</p>
+             <p>Confesamos que sois el camino, la verdad y la vida, así de los individuos como de las familias, pueblos y naciones; y que lejos de Vos y de los esplendores de vuestra Cruz sólo se encuentran engaños y amarguras.</p>
+             <p>Hacemos nuestro el pacto de fidelidad celebrado por nuestros antepasados, PROMETIENDO QUE VOS, DULCE JESÚS, SERÁS SIEMPRE NUESTRO, Y QUE NOSOTROS SEREMOS SIEMPRE TUYOS. Extiéndase vuestros brazos sobre este pueblo y la Nación Argentina, para protegernos y defendernos; y haced que las verdades de nuestra fe y enseñanzas de la Iglesia, sean siempre el norte de nuestras acciones y el fundamento inconmovible de nuestras instituciones. ¡Señor del Milagro salvad y bendecid nuestro pueblo! AMÉN. </p>
+             <p><b>A LA VIRGEN DEL MILAGRO</b></p>
+             <p>Virgen Inmaculada, Madre y Señora Nuestra del Milagro, el pueblo de Salta postrado a vuestros pies, quiere reconocer y renovar los votos de sus padres, al jurar vuestro patronato y ponerse bajo vuestra protección. Sí, en presencia del cielo y de la tierra, hacemos nuestro el voto que en Setiembre de 1692 hiciera este pueblo, de celebrar los días en que os manifestasteis su especial Protectora, y juramos teneros siempre por Madre y Abogada nuestra. Y Vos Señora, dignaos bendecir y proteger este pueblo mirándolo como heredad vuestra, para que sea siempre fiel a la fe, a las enseñanzas  de la Iglesia y a los compromisos contraídos. Nuestra Señora del Milagro, rogad por nosotros. AMÉN. </p>
+             </div>
 
 
+             <br><br>
 
-               <nav>
+               <!--nav>
                 <ul class="pager">
-                  <li><a href="diez.html"><span class="vkeyboard-arrow-left"></span> Anterior</a></li>
-                  <li><a href="index.html">Inicio <span class="vkeyboard-arrow-right"></span></a></li>
+                  <li><a href="nueve.html"><span class="vkeyboard-arrow-left"></span> Anterior</a></li>
+                  <li><a href="tres.html">Siguiente <span class="vkeyboard-arrow-right"></span></a></li>
                 </ul>
-              </nav>
+              </nav-->
             </div>
           </div><!-- /.blog-main -->
 

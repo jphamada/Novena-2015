@@ -9,7 +9,7 @@
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
 
-  <title>Novena del Señor y la Virgen del Milagro</title>
+  <title>Pacto de Fidelidad</title>
 
   <!-- Bootstrap core CSS -->
   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +35,10 @@
     //
     document.addEventListener("deviceready", onDeviceReady, false);
 
-
+    function resizeText(multiplier) {
+    var elem = document.getElementById("font");
+    var currentSize = elem.style.fontSize || 1;
+    elem.style.fontSize = ( parseFloat(currentSize) + (multiplier * 0.2)) + "em";
    
     }
 
@@ -52,7 +55,7 @@
       <div class="container-fluid">
        <!-- Menú -->
 
-       <nav class="navbar navbar-inverse navbar-fixed-top">
+       <nav class="navbar navbar-inverse navbar-fixed-top nav-bar-transparent">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -80,8 +83,6 @@
               <li><a href="nueve.html">Noveno día</a></li>
               <li><a href="pacto.html">Pacto de Fidelidad</a></li>
               <li><a href="oracion-virgen.html">Oración a la Virgen del Milagro</a></li>
-
-
             </ul>
           </div>
         </div>
@@ -98,25 +99,42 @@
         <div class="col-md-12 blog-main">
           <div class="overlay">
             <div class="sombra"></div>
-            <img class="img-responsive" src="img/11.jpg">
+            <img class="img-responsive" src="img/01.jpg">
           </div>
           <div class="blog-post">
-            <h3 class="blog-post-title">Información últil</h3>
-            <h5>Mapa de la procesión</h5>
+            
+            <div class="botonesletra">
+              <input name="reSize" type="button" value="&nbsp;+&nbsp;" onclick="resizeText(1)" />
+              <input name="reSize2" type="button" value="&nbsp;-&nbsp;&nbsp;" onclick="resizeText(-1)" />
+            </div>
+
+           
+            <h5>Oración a la Virgen del Milagro por la vida</h5>
+            
+
+            <div id="font">
+
             <div id="bgris">
 
-              <p></p>
-              <p>
-                <img src="img/map.jpg"></p>
+             <p>Madre del Milagro, Señora de la Vida, al recibir el anuncio del Ángel acogiste la Vida con madurez, generosidad y audacia. Acompaña a las mujeres que asumen el desafío de ser madres y fortalécelas en su misión de custodias de la humanidad que en ellas se gesta.</p>
+             <p>Al pie de la Cruz recibiste el Cuerpo de tu Hijo y con tu esperanza fuerte sostuviste, de pie, la aurora de la Resurrección.</p>
+             <p>Recibe a tantos niños que mueren en la fuente de la vida, toca el corazón de quienes no deben convertir esa fuente en cadalso de muerte y ayúdanos a todos a custodiar la vida cuando esté amenazada.</p>
+             <p>En los comienzos de nuestra historia de Alianza asumiste al pie del Sagrario a éste, tu pueblo, para acompañarlo en su peregrinar.</p>
+             <p>Acompaña a quienes son responsables de él para que en las leyes que promulguen, en las decisiones que tomen y en los juicios que emitan, jamás atenten contra la vida del hombre, desde su concepción hasta su muerte.</p>
+             <p>Madre del Milagro, ampara a tus hijos pequeños. AMÉN. </p>
+             <p>Mons. Mario A. Cargnello, Arzobispo de Salta.
+</p>
+             </div>
 
 
+             <br><br>
 
-               <nav>
+               <!--nav>
                 <ul class="pager">
-                  <li><a href="diez.html"><span class="vkeyboard-arrow-left"></span> Anterior</a></li>
-                  <li><a href="index.html">Inicio <span class="vkeyboard-arrow-right"></span></a></li>
+                  <li><a href="nueve.html"><span class="vkeyboard-arrow-left"></span> Anterior</a></li>
+                  <li><a href="tres.html">Siguiente <span class="vkeyboard-arrow-right"></span></a></li>
                 </ul>
-              </nav>
+              </nav-->
             </div>
           </div><!-- /.blog-main -->
 
