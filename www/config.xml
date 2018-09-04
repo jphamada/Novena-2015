@@ -1,10 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.novenasalta2015.helloworld"
         version   = "1.0.0">
+
+    <meta charset="utf-8" />
 
     <name>Novena del Señor y la Virgen del Milagro</name>
 
@@ -23,9 +25,12 @@
     -->
     <preference name="permissions"                value="none"/>
         
+    <uses-permission android:name="android.permission.RECORD_AUDIO" tools:node="remove" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" tools:node="remove" />
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version" value="cli-6.3.0" />        <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version" value="cli-6.4.0" />       <!-- all: current version of PhoneGap -->
     
 
 
